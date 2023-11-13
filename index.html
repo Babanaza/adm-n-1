@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Карточка автомобиля</title>
+</head>
+<!-- Форма для добавления нового товара -->
+<div class="admin-form" id="addProductForm">
+    <label for="brandInput">Марка:</label>
+    <input type="text" id="brandInput">
+    <label for="priceInput">Цена:</label>
+    <input type="text" id="priceInput">
+    <label for="imageInput">Изображение:</label>
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="addProduct()">Добавить товар</button>
+</div>
+
+<!-- Контейнер для отображения карточек товаров -->
+<div class="card-container" id="productContainer">
+    <!-- Сюда будут добавляться карточки товаров -->
+</div>
+
+<!-- Кнопка для переключения в режим администратора -->
+<button onclick="toggleAdminMode()">Переключить в режим администратора</button>
+
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="1.jpg" alt="Car Image 1">
+                <img src="2.jpg" alt="Car Image 2">
+                <img src="3.jpg" alt="Car Image 3">
+                <img src="4.jpg" alt="Car Image 3">
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+            <div class="info">
+                <p>Марка: Название автомобиля</p>
+                <p>Цена: $25,000</p>
+                <!-- Другая информация о машине -->
+                <button onclick="callSeller()">Позвонить</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

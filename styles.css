@@ -1,0 +1,81 @@
+    /* Ваши предыдущие стили */
+    
+    .card-container {
+        background-color: #fff;
+        width: 300px;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 10px 10px 40px #434040;
+        margin: auto;
+        margin-top: 65px;
+    }
+    
+    .image-slider {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .image-slider img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: none;
+    }
+    
+    .info {
+        padding: 20px;
+    }
+    /* Добавленные стили для автоматического пролистывания */
+    
+    .image-slider img.active {
+        display: block;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .image-slider {
+        animation: slide 5s infinite;
+    }
+    /* ... ваш код ... */
+    
+    .admin-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .admin-form input[type="text"],
+    .admin-form input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+    /* Стили для кнопки выбора файла */
+    
+    .admin-form input[type="file"] {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .admin-form button {
+        display: block;
+        padding: 10px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .admin-form button:hover {
+        background-color: #2980b9;
+    }
+    /* ... ваш код ... */
